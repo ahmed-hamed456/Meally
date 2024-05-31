@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meally.API", "Meally\Meally.API.csproj", "{EB30273E-F5AF-49F1-BD35-FA06906DDC19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meally.core", "Meally.core\Meally.core.csproj", "{7EE9E1AF-506F-4F42-825F-987E7E7916FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meally.Repository", "Meally.Repository\Meally.Repository.csproj", "{C3AB3562-AE92-4677-B522-7C74677B6EC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meally.Service", "Meally.Service\Meally.Service.csproj", "{C6EF92D7-A28E-44F5-85ED-9C8C16A9A7AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB30273E-F5AF-49F1-BD35-FA06906DDC19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB30273E-F5AF-49F1-BD35-FA06906DDC19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB30273E-F5AF-49F1-BD35-FA06906DDC19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB30273E-F5AF-49F1-BD35-FA06906DDC19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EE9E1AF-506F-4F42-825F-987E7E7916FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE9E1AF-506F-4F42-825F-987E7E7916FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE9E1AF-506F-4F42-825F-987E7E7916FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EE9E1AF-506F-4F42-825F-987E7E7916FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3AB3562-AE92-4677-B522-7C74677B6EC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3AB3562-AE92-4677-B522-7C74677B6EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3AB3562-AE92-4677-B522-7C74677B6EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3AB3562-AE92-4677-B522-7C74677B6EC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6EF92D7-A28E-44F5-85ED-9C8C16A9A7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6EF92D7-A28E-44F5-85ED-9C8C16A9A7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6EF92D7-A28E-44F5-85ED-9C8C16A9A7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6EF92D7-A28E-44F5-85ED-9C8C16A9A7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {635F18D7-8B1B-417D-9090-3495BC6E4F53}
+	EndGlobalSection
+EndGlobal

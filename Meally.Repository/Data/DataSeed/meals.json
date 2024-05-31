@@ -1,0 +1,84 @@
+[
+  {
+    "Name": "وجبه فاهيتا لحمه ",
+    "Components": "سندوتش فاهيتا لحمه مع التوميه مع بعض من المخلل وبضع من البطاطس المحمره.",
+    "Price": 100,
+    "PictureUrl": "images/Meals/2.png",
+    "Calories": 640,
+    "RestaurantId": "b1508a41-7374-4893-1177-08dc76c0a940",
+    "Type": "Lunch",
+    "CategoryId": "0b63b420-4e37-416f-51f6-08dc76c0a928"
+
+  },
+  {
+    "Name": "وجبه فته شاورما فراخ",
+    "Components": "ارز مع شاورما الفراخ مع التوميه مع صوص الباربيكيو مع بعض المخلل.",
+    "Price": 150,
+    "PictureUrl": "images/Meals/2.png",
+    "Calories": 800,
+    "RestaurantId": "0c9d38f4-b6c4-4a2e-1178-08dc76c0a940",
+    "Type": "Lunch",
+    "CategoryId": "f31b357e-ddc8-4140-51f8-08dc76c0a928"
+  },
+  {
+    "Name": "سلطه خضار ",
+    "Components": "مجموعه من الخضار مثل الطماطم والخيار والفلفل الاخضر مضاف عليهم القليل من البصل والليمون والخل.",
+    "Price": 40,
+    "PictureUrl": "images/Meals/2.png",
+    "Calories": 700,
+    "RestaurantId": "b1508a41-7374-4893-1177-08dc76c0a940",
+    "Type": "BreakFast",
+    "CategoryId": "2ef953e0-5d4b-4ca7-51f4-08dc76c0a928"
+  },
+  {
+    "Name": "ريزو",
+    "Components": "الارز المبهر بالاضافه الي التوابل المكسيكيه مضاف عليه الفراخ المقليه المقرمشه بالاضافه الي صوص الباربيكيو.",
+    "Price": 90,
+    "PictureUrl": "images/Meals/2.png",
+    "Calories": 400,
+    "RestaurantId": "b1508a41-7374-4893-1177-08dc76c0a940",
+    "Type": "Lunch",
+    "CategoryId": "f31b357e-ddc8-4140-51f8-08dc76c0a928"
+  },
+  {
+    "Name": " لازانيا فراخ",
+    "Components": "مكرونه شرايط مع الجبنه البارميزان مع بعض من الجبنه الموتزريلا مع بعض من الفراخ المشويه الخطيره.",
+    "Price": 220,
+    "PictureUrl": "images/Meals/2.png",
+    "Calories": 450,
+    "RestaurantId": "0c9d38f4-b6c4-4a2e-1178-08dc76c0a940",
+    "Type": "Dinner",
+    "CategoryId": "f31b357e-ddc8-4140-51f8-08dc76c0a928"
+  },
+  {
+    "Name": "نجرسكو بالفراخ",
+    "Components": "مكرونه مع الجبنه الموتزريلا مع الماشروم والبشاميل مع اضافه الفراخ المشويه .",
+    "Price": 190,
+    "PictureUrl": "images/Meals/2.png",
+    "Calories": 950,
+    "RestaurantId": "0c9d38f4-b6c4-4a2e-1178-08dc76c0a940",
+    "Type": "Dinner",
+    "CategoryId": "f31b357e-ddc8-4140-51f8-08dc76c0a928"
+  },
+  {
+    "Name": "وجبه سمك فيليه ",
+    "Components": "السمك المخلي المقلي الخطير مع الارز الاصفر المكرمل بالبصل مع سلطه الطحينه ورغيفين خبز.",
+    "Price": 210,
+    "PictureUrl": "images/Meals/2.png",
+    "Calories": 400,
+    "RestaurantId": "b1508a41-7374-4893-1177-08dc76c0a940",
+    "Type": "Lunch",
+    "CategoryId": "3a864dc9-eea1-4d78-51f7-08dc76c0a928"
+  },
+  {
+    "Name": "بيتزا مارجريتا ",
+    "Components": "بيتزا بالجبنه الموتزريلا مع جميع انواع الخضار الطازج مع الماشروم الصيني.",
+    "Price": 200,
+    "PictureUrl": "images/Meals/2.png",
+    "Calories": 550,
+    "RestaurantId": "b1508a41-7374-4893-1177-08dc76c0a940",
+    "Type": "Dinner",
+    "CategoryId": "2ef953e0-5d4b-4ca7-51f4-08dc76c0a928"
+  }
+        
+]

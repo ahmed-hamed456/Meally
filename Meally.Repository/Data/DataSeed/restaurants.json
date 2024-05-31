@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "هريدى",
+    "Description": "مطعم لجميع الاكلات الشعبيه",
+    "Address": "شارع محمد فريد",
+    "Rate": 5,
+    "PictureUrl": "images/Restaurants/Restaurant.png"
+  },
+  {
+    "Name": "كنتاكي",
+    "Description": "فرايد تشيكن",
+    "Address": "شارع البحر",
+    "Rate": 4,
+    "PictureUrl": "images/Restaurants/Restaurant.png"
+  }
+]
+    
