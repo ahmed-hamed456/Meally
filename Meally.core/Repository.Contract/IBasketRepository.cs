@@ -4,7 +4,7 @@ namespace Meally.core.Repository.Contract;
 
 public interface IBasketRepository
 {
-    Task<CustomerBasket?> GetBasketAsync(string basketId);
-    Task<CustomerBasket?> UpdateBasketAsync(CustomerBasket basket);
+    CustomerBasket GetBasketAsync(string basketId);
+    Task<CustomerBasket?> UpdateBasketAsync(CustomerBasket basket,string userId);
     Task DeleteBasketAsync(string basketId);
 }

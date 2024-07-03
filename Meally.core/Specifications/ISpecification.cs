@@ -1,4 +1,4 @@
-﻿using Meally.core.Entities;
+﻿using Meally.core.Entities.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,5 +1,5 @@
 ﻿using Meally.core;
-using Meally.core.Entities;
+using Meally.core.Entities.Identity;
 using Meally.core.Repository.Contract;
 using Meally.Repository.Data;
 using System;
@@ -13,10 +13,10 @@ namespace Meally.Repository
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly StoreContext _dbContext;
+        private readonly AppIdentityDbContext _dbContext;
         private Hashtable _repository;
 
-        public UnitOfWork(StoreContext dbContext)
+        public UnitOfWork(AppIdentityDbContext dbContext)
         {
             _dbContext = dbContext;
             _repository = new Hashtable();

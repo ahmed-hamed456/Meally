@@ -1,4 +1,4 @@
-﻿using Meally.core.Entities;
+﻿using Meally.core.Entities.Identity;
 using Meally.core.Entities.Order_Aggregate;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;

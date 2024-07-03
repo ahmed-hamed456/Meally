@@ -1,4 +1,4 @@
-﻿using Meally.core.Entities;
+﻿using Meally.core.Entities.Identity;
 using Meally.core.RestaurantsSpecs;
 using Meally.core.Specifications;
 using System;
@@ -28,7 +28,7 @@ namespace Meally.core.MealsSpecs
 
         }
 
-        public MealWithRestaurantWithCategory(Guid id)
+        public MealWithRestaurantWithCategory(int id)
                 : base(M => M.Id == id)
         {
             AddIncludes();

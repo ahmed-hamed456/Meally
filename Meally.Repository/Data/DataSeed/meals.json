@@ -5,9 +5,9 @@
     "Price": 100,
     "PictureUrl": "images/Meals/2.png",
     "Calories": 640,
-    "RestaurantId": "b1508a41-7374-4893-1177-08dc76c0a940",
+    "RestaurantId": 1,
     "Type": "Lunch",
-    "CategoryId": "0b63b420-4e37-416f-51f6-08dc76c0a928"
+    "CategoryId": 3
 
   },
   {
@@ -16,9 +16,9 @@
     "Price": 150,
     "PictureUrl": "images/Meals/2.png",
     "Calories": 800,
-    "RestaurantId": "0c9d38f4-b6c4-4a2e-1178-08dc76c0a940",
+    "RestaurantId": 2,
     "Type": "Lunch",
-    "CategoryId": "f31b357e-ddc8-4140-51f8-08dc76c0a928"
+    "CategoryId": 5
   },
   {
     "Name": "سلطه خضار ",
@@ -26,9 +26,9 @@
     "Price": 40,
     "PictureUrl": "images/Meals/2.png",
     "Calories": 700,
-    "RestaurantId": "b1508a41-7374-4893-1177-08dc76c0a940",
+    "RestaurantId": 1,
     "Type": "BreakFast",
-    "CategoryId": "2ef953e0-5d4b-4ca7-51f4-08dc76c0a928"
+    "CategoryId": 1
   },
   {
     "Name": "ريزو",
@@ -36,9 +36,9 @@
     "Price": 90,
     "PictureUrl": "images/Meals/2.png",
     "Calories": 400,
-    "RestaurantId": "b1508a41-7374-4893-1177-08dc76c0a940",
+    "RestaurantId": 2,
     "Type": "Lunch",
-    "CategoryId": "f31b357e-ddc8-4140-51f8-08dc76c0a928"
+    "CategoryId": 5
   },
   {
     "Name": " لازانيا فراخ",
@@ -46,9 +46,9 @@
     "Price": 220,
     "PictureUrl": "images/Meals/2.png",
     "Calories": 450,
-    "RestaurantId": "0c9d38f4-b6c4-4a2e-1178-08dc76c0a940",
+    "RestaurantId": 2,
     "Type": "Dinner",
-    "CategoryId": "f31b357e-ddc8-4140-51f8-08dc76c0a928"
+    "CategoryId": 5
   },
   {
     "Name": "نجرسكو بالفراخ",
@@ -56,9 +56,9 @@
     "Price": 190,
     "PictureUrl": "images/Meals/2.png",
     "Calories": 950,
-    "RestaurantId": "0c9d38f4-b6c4-4a2e-1178-08dc76c0a940",
+    "RestaurantId": 2,
     "Type": "Dinner",
-    "CategoryId": "f31b357e-ddc8-4140-51f8-08dc76c0a928"
+    "CategoryId": 5
   },
   {
     "Name": "وجبه سمك فيليه ",
@@ -66,9 +66,9 @@
     "Price": 210,
     "PictureUrl": "images/Meals/2.png",
     "Calories": 400,
-    "RestaurantId": "b1508a41-7374-4893-1177-08dc76c0a940",
+    "RestaurantId": 1,
     "Type": "Lunch",
-    "CategoryId": "3a864dc9-eea1-4d78-51f7-08dc76c0a928"
+    "CategoryId": 4
   },
   {
     "Name": "بيتزا مارجريتا ",
@@ -76,9 +76,9 @@
     "Price": 200,
     "PictureUrl": "images/Meals/2.png",
     "Calories": 550,
-    "RestaurantId": "b1508a41-7374-4893-1177-08dc76c0a940",
+    "RestaurantId": 1,
     "Type": "Dinner",
-    "CategoryId": "2ef953e0-5d4b-4ca7-51f4-08dc76c0a928"
+    "CategoryId": 3
   }
         
 ]

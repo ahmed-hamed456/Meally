@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Meally.core.Entities
+namespace Meally.core.Entities.Identity
 {
     public class Restaurant : BaseEntity
     {
@@ -14,8 +14,8 @@ namespace Meally.core.Entities
         public string Address { get; set; }
         public decimal Rate { get; set; }
         public string PictureUrl { get; set; }
-        public DateTime CreationDate { get; set; } 
-  
+        public DateTime CreationDate { get; set; }
+
 
         public Restaurant()
         {

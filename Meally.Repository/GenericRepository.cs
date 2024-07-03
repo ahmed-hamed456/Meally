@@ -1,4 +1,4 @@
-﻿using Meally.core.Entities;
+﻿using Meally.core.Entities.Identity;
 using Meally.core.Repository.Contract;
 using Meally.core.Specifications;
 using Meally.Repository.Data;
@@ -13,9 +13,9 @@ namespace Meally.Repository
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
-        private readonly StoreContext _dbContext;
+        private readonly AppIdentityDbContext _dbContext;
 
-        public GenericRepository(StoreContext dbContext)
+        public GenericRepository(AppIdentityDbContext dbContext)
         {
             _dbContext = dbContext;
         }
@@ -24,7 +24,7 @@ namespace Meally.Repository
            return await _dbContext.Set<T>().ToListAsync();
         }
 
-        public async Task<T?> GetEntityAsync(Guid id)
+        public async Task<T?> GetEntityAsync(int id)
         {
             return await _dbContext.Set<T>().FindAsync(id);
         }

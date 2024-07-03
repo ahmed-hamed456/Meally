@@ -7,17 +7,19 @@ using System.Threading.Tasks;
 
 namespace Meally.core.Entities.Identity
 {
+    [NotMapped]
     public class CustomerBasket
     {
         public string Id { get; set; }
-
-        [ForeignKey("AppUser")]
-        public string UserId { get; set; }
-        public AppUser AppUser { get; set; }
-        public ICollection<CustomerBasketItem> CustomerBasketItems { get; set; }
+        
+        public List<BasketItem> Items { get; set; }
         public CustomerBasket(string id)
         {
             Id = id;
+        }
+
+        public CustomerBasket()
+        {
         }
     }
 }

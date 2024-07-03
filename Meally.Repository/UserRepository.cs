@@ -10,9 +10,9 @@ namespace Meally.Repository
 {
     public class UserRepository : IUserRepository
     {
-        private readonly StoreContext _context;
+        private readonly AppIdentityDbContext _context;
 
-        public UserRepository(StoreContext context)
+        public UserRepository(AppIdentityDbContext context)
         {
             _context = context;
         }

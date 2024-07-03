@@ -1,4 +1,4 @@
-﻿using Meally.core.Entities;
+﻿using Meally.core.Entities.Identity;
 using Meally.core.Specifications;
 using Microsoft.EntityFrameworkCore;
 using System;

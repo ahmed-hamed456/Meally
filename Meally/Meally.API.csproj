@@ -20,4 +20,8 @@
     <ProjectReference Include="..\Meally.Service\Meally.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Users\" />
+  </ItemGroup>
+
 </Project>

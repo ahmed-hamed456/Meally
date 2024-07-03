@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using Meally.core.Entities.Identity;
 
 namespace Meally.core.Entities.Order_Aggregate
 {
@@ -10,10 +12,17 @@ namespace Meally.core.Entities.Order_Aggregate
     {
         public DateTime CreationDate { get; set; }
         public string PackgeName { get; set; }
-        public string TotalPrice { get; set; }
-        public string NumberOfDays { get; set; }
+        public int TotalPrice { get; set; }
+        public int NumberOfDays { get; set; }
 
-        public ICollection<Order> Orders { get; set; }
+        [JsonIgnore]
+        public ICollection<Order> Orders { get; set; } = new HashSet<Order>();
+
+        public Subscription()
+        {
+
+        }
+
     }
     
 }

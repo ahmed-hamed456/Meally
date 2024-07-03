@@ -1,10 +1,11 @@
-﻿using Meally.core.Specifications;
+﻿using Meally.core.Entities.Identity;
+using Meally.core.Specifications;
 
 namespace Meally.core.Repository.Contract;
 
 public interface IGenericRepository<T> where T : BaseEntity
 {
-    Task<T?> GetEntityAsync(Guid id);
+    Task<T?> GetEntityAsync(int id);
     Task<IReadOnlyList<T>> GetAllAsync();
 
     Task<T?> GetEntityAsyncSpec(ISpecification<T> spec);

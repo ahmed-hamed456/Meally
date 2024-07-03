@@ -4,7 +4,7 @@
 
 namespace Meally.Repository.Data.Migrations
 {
-    public partial class M : Migration
+    public partial class sub : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

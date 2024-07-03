@@ -1,12 +1,12 @@
 ﻿using Meally.core.Entities.Identity;
 using Meally.core.Service.Contract;
-using Meally.Repository.Identity;
 using Meally.Service;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Identity;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Meally.Repository.Data;
 
 namespace Meally.API.Extensions
 {

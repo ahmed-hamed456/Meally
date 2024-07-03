@@ -1,5 +1,7 @@
-﻿using Meally.API.Errors;
-using Meally.core.Entities;
+﻿using AutoMapper;
+using Meally.API.Dtos;
+using Meally.API.Errors;
+using Meally.core.Entities.Identity;
 using Meally.core.MealsSpecs;
 using Meally.core.Repository.Contract;
 using Meally.core.RestaurantsSpecs;
@@ -18,29 +20,35 @@ namespace Meally.API.Controllers
         private readonly IGenericRepository<Restaurant> _restaurantRepo;
         private readonly IGenericRepository<Meal> _mealRepo;
         private readonly IGenericRepository<Category> _categoryRepo;
+        private readonly IMapper _mapper;
 
         public RestaurantController(
             IGenericRepository<Restaurant> restaurantRepo,
             IGenericRepository<Meal> mealRepo,
             IGenericRepository<Category> categoryRepo
-            )
+,
+            IMapper mapper)
         {
             _restaurantRepo = restaurantRepo;
             _mealRepo = mealRepo;
             _categoryRepo = categoryRepo;
+            _mapper = mapper;
         }
 
-        
+
         [HttpGet("restaurant")]
-        public async Task<ActionResult<IReadOnlyList<Restaurant>>> GetAllRestaurants()
+        public async Task<ActionResult<IReadOnlyList<Restaurant>>> GetAllRestaurants(bool? show)
         {
+            if(show is false)
+               return Ok();
+
             var restaurants = await _restaurantRepo.GetAllAsync();
 
             return Ok(restaurants);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Restaurant>> GetRestaurant(Guid id)
+        public async Task<ActionResult<Restaurant>> GetRestaurant(int id)
         {
             var restaurant = await _restaurantRepo.GetEntityAsync(id);
 
@@ -52,7 +60,7 @@ namespace Meally.API.Controllers
 
 
         [HttpDelete("restaurant")]
-        public async Task<IActionResult> DeleteRestaurant(Guid id)
+        public async Task<IActionResult> DeleteRestaurant(int id)
         {
             var retaurant = await _restaurantRepo.GetEntityAsync(id);
 
@@ -64,17 +72,20 @@ namespace Meally.API.Controllers
         }
 
         [HttpGet("meals")]
-        public async Task<ActionResult<IReadOnlyList<Meal>>> GetAllMeals([FromQuery]MealsSpecParams specParams)
+        public async Task<ActionResult<IReadOnlyList<MealToReturnDto>>> GetAllMeals([FromQuery]MealsSpecParams specParams, bool? show)
         {
+            if(show is false)
+              return Ok();
+
             var spec = new MealWithRestaurantWithCategory(specParams);
 
             var meals = await _mealRepo.GetAllAsyncSpec(spec);
 
-            return Ok(meals);
+            return Ok(_mapper.Map<IReadOnlyList<Meal>, IReadOnlyList<MealToReturnDto>>(meals));
         }
 
         [HttpDelete("meals")]
-        public async Task<IActionResult> DeleteMeal(Guid id)
+        public async Task<IActionResult> DeleteMeal(int id)
         {
             var meal = await _mealRepo.GetEntityAsync(id);
 
@@ -86,15 +97,18 @@ namespace Meally.API.Controllers
         }
 
         [HttpGet("category")]
-        public async Task<ActionResult<IReadOnlyList<Category>>> GetAllCategory()
+        public async Task<ActionResult<IReadOnlyList<Category>>> GetAllCategory(bool? show)
         {
+            if(show is false)
+              return Ok();
+
             var category = await _categoryRepo.GetAllAsync();
 
             return Ok(category);
         }
 
         [HttpDelete("category")]
-        public async Task<IActionResult> DeleteCategory(Guid id)
+        public async Task<IActionResult> DeleteCategory(int id)
         {
             var category = await _categoryRepo.GetEntityAsync(id);
 

@@ -10,6 +10,10 @@ namespace Meally.core.Entities.Identity
     public class AppUser : IdentityUser
     {
         public string DisplayName { get; set; }
-        public Address Address { get; set; }
+        public byte[]? Profile_Picture { get; set; }
+        public int AddressId { get; set; }
+        public ICollection<Address> Address { get; set; }
+
+        public ICollection<CustomerBasket> CustomerBaskets { get; set; }
     }
 }

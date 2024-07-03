@@ -1,4 +1,5 @@
-﻿using Meally.core.Entities;
+﻿using Meally.core.Entities.Identity;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,10 +9,22 @@ using System.Threading.Tasks;
 
 namespace Meally.Repository.Data
 {
-    public static class StoreContextSeed
+    public static class AppIdentityDbContextSeed
     {
-        public async static Task SeedAsync(StoreContext _dbContext)
+        public static async Task SeedUsersAsync(UserManager<AppUser> _userManager,AppIdentityDbContext _dbContext)
         {
+            if (_userManager.Users.Count() == 0)
+            {
+                var user = new AppUser()
+                {
+                    DisplayName = "Ahmed Hamed",
+                    Email = "ahmedhamed20042003@gmail.com",
+                    PhoneNumber = "01055481277",
+                    UserName = "Ahmed_hamed"
+                };
+                await _userManager.CreateAsync(user, "Pa$$w0rd");
+            }
+
             if (_dbContext.Categories.Count() == 0)
             {
                 var categoryData = File.ReadAllText("../Meally.Repository/Data/DataSeed/categories.json");
@@ -19,7 +32,7 @@ namespace Meally.Repository.Data
 
                 if (categories?.Count() > 0)
                 {
-                    _dbContext.Set<Category>().AddRange(categories);   
+                    _dbContext.Set<Category>().AddRange(categories);
                     await _dbContext.SaveChangesAsync();
                 }
             }
@@ -29,7 +42,7 @@ namespace Meally.Repository.Data
                 var retaurantData = File.ReadAllText("../Meally.Repository/Data/DataSeed/restaurants.json");
                 var restaurants = JsonSerializer.Deserialize<List<Restaurant>>(retaurantData);
 
-                if(restaurants?.Count() > 0 )
+                if (restaurants?.Count() > 0)
                 {
                     _dbContext.Set<Restaurant>().AddRange(restaurants);
                     await _dbContext.SaveChangesAsync();
@@ -43,13 +56,12 @@ namespace Meally.Repository.Data
 
                 if (meals?.Count() > 0)
                 {
-                    
-                    _dbContext.Set<Meal>().AddRange(meals); 
-                    
+
+                    _dbContext.Set<Meal>().AddRange(meals);
+
                     await _dbContext.SaveChangesAsync();
                 }
             }
-        
         }
     }
 }

@@ -21,8 +21,6 @@ namespace Meally.Repository.Data.Config
 
             builder.Property(S => S.NumberOfDays)
                 .IsRequired();
-
-            
         }
     }
 }

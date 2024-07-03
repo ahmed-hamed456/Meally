@@ -15,9 +15,4 @@
     <ProjectReference Include="..\Meally.Service\Meally.Service.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Identity\Config\" />
-    <Folder Include="Identity\DataSeed\" />
-  </ItemGroup>
-
 </Project>

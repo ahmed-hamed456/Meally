@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Meally.core.Entities
+namespace Meally.core.Entities.Identity
 {
     public class Category : BaseEntity
     {
         public string Name { get; set; }
         public string PictureUrl { get; set; }
-        public DateTime CreationDate { get; set; } 
+        public DateTime CreationDate { get; set; }
 
         public Category()
         {

@@ -11,7 +11,7 @@ public class MealsSpecParams
     }
 
     public string? Sort { get; set; }
-    public Guid? CategoryId { get; set; }
-    public Guid? RestaurantId { get; set; }
+    public int? CategoryId { get; set; }
+    public int? RestaurantId { get; set; }
 
 }

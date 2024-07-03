@@ -1,4 +1,6 @@
-﻿namespace Meally.core.Specifications;
+﻿using Meally.core.Entities.Identity;
+
+namespace Meally.core.Specifications;
 
 public class BaseSpecification<T> : ISpecification<T> where T : BaseEntity
 {

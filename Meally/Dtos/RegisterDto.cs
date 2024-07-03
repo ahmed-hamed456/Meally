@@ -1,11 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Runtime.InteropServices;
 
 namespace Meally.API.Dtos
 {
     public class RegisterDto
     {
+        //[RegularExpression(@"^[a-zA-Z\s'-]+$")]
+
         [Required]
-        [RegularExpression(@"^[a-zA-Z\s'-]+$")]
         public string DisplayName { get; set; }
 
         [Required]
@@ -15,9 +17,10 @@ namespace Meally.API.Dtos
         [Required]
         [RegularExpression(@"^(?:\+20)?(?:0)?(?:1[0-2]|2[0-9]|9[0-2]|1[5-9])(?:[0-9]{8})$")]
         public string PhoneNumber { get; set; }
+        
 
         [Required]
-        [RegularExpression("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,32}$", ErrorMessage = "You must match regex At least one digit [0-9]\r\nAt least one lowercase character [a-z]\r\nAt least one uppercase character [A-Z] At least 8 characters in length, but no more than 32.")]
+        [RegularExpression("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,32}$", ErrorMessage = "You must match regex At least one digit [0-9]\r\nAt least one lowercase character [a-z]\r\nAt least one uppercase character [A-Z] At least 8 characters in length, but no more than 32 or Distincit letter such as $ or #.")]
         public string Password { get; set; }
 
         [Required]

@@ -17,8 +17,17 @@ namespace Meally.API.Dtos
         [Range(1, int.MaxValue, ErrorMessage = "Quantity must be at least one item!!")]
         public int Quantity { get; set; }
         [Required]
-        public string RestaurantName { get; set; }
+        public string Restaurant { get; set; }
         [Required]
         public string Category { get; set; }
+        [Required]
+        public string Components { get; set; }
+        [Required]
+        public string Type { get; set; }
+        [Required]
+        public int Calories { get; set; }
+        [Required]
+        public DateTime DeliveryDate { get; set; }
+
     }
 }
